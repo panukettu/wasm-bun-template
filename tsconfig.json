@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "allowJs": false,
+    "lib": ["esnext", "dom"],
+    "types": ["bun-types", "typescript/lib/lib.dom.d.ts"],
+    "moduleResolution": "bundler",
+    "baseUrl": ".",
+    "strict": true,
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noImplicitThis": true,
+    "noEmitOnError": true,
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "preserveConstEnums": false,
+    "downlevelIteration": true,
+    "jsx": "preserve",
+    "jsxFactory": "jsx",
+    "jsxFragmentFactory": "Fragment",
+    "jsxImportSource": "hono/jsx",
+    "outDir": "./build"
+  },
+  "references": [
+    {
+      "path": "./assembly/tsconfig.json"
+    },
+    {
+      "path": "./test/tsconfig.json"
+    }
+  ],
+  "include": ["src", "assembly", "test"]
+}

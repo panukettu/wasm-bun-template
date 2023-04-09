@@ -1,0 +1,39 @@
+{
+  "name": "@panukettu/assemblyscript",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "./src/index.ts",
+  "default": "index.html",
+  "scripts": {
+    "start": "bun run dev",
+    "lint": "npx prettier . --write",
+    "dev": "concurrently \"npm:dev:*\"",
+    "dev:server": "bun --hot src/server.tsx",
+    "dev:asm": "nodemon assembly/index.ts",
+    "asm": "asc --target debug",
+    "asbuild:release": "asc --target release",
+    "asbuild": "npm run asbuild:debug && npm run asbuild:release",
+    "test": "node tests"
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.27.1",
+    "bun": "^0.5.9",
+    "bun-html-live-reload": "github:aabccd021/bun-html-live-reload",
+    "bun-types": "^0.5.8",
+    "concurrently": "^8.0.1",
+    "nodemon": "^2.0.22",
+    "typescript": "^5.0.4"
+  },
+  "keywords": [],
+  "exports": {
+    ".": {
+      "import": "./build/release.js",
+      "types": "./build/release.d.ts"
+    }
+  },
+  "dependencies": {
+    "hono": "^3.1.5",
+    "serve-static-bun": "^0.5.1"
+  }
+}

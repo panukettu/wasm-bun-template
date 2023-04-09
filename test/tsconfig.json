@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "types": ["assemblyscript/std/assembly"],
+    "composite": true
+  },
+  "include": ["index.ts"]
+}
