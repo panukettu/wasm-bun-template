@@ -27,7 +27,7 @@
   },
   "references": [
     {
-      "path": "./assembly/tsconfig.json"
+      "path": "./wasm/tsconfig.json"
     },
     {
       "path": "./test/tsconfig.json"
