@@ -30,7 +30,7 @@ interface SiteData {
   children?: any;
 }
 
-const Layout = (props: SiteData) => html`<!DOCTYPE html>
+export const Layout = (props: SiteData) => html`<!DOCTYPE html>
   <html>
     <head>
       <title>${props.title}</title>

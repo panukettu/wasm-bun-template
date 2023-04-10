@@ -1,8 +1,8 @@
 {
-  "name": "@panukettu/assemblyscript",
+  "name": "@panukettu/wasm-bun",
   "version": "1.0.0",
   "type": "module",
-  "description": "",
+  "description": "create wasm with assemblyscript and web with bun/hono",
   "main": "./src/index.ts",
   "default": "index.html",
   "scripts": {

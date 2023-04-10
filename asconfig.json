@@ -1,15 +1,15 @@
 {
-  "entries": ["./assembly/index.ts"],
+  "entries": ["./wasm/index.ts"],
   "targets": {
     "debug": {
-      "outFile": "src/static/debug.wasm",
-      "textFile": "temp/debug.wat",
+      "outFile": "web/static/debug.wasm",
+      "textFile": "web/static/debug.wat",
       "sourceMap": true,
       "debug": true
     },
     "release": {
-      "outFile": "dist/release.wasm",
-      "textFile": "dist/release.wat",
+      "outFile": "web/static/release.wasm",
+      "textFile": "web/static/release.wat",
       "sourceMap": true,
       "optimizeLevel": 3,
       "shrinkLevel": 0,

@@ -33,5 +33,5 @@
       "path": "./test/tsconfig.json"
     }
   ],
-  "include": ["src", "assembly", "test"]
+  "include": ["web", "assembly", "test"]
 }
