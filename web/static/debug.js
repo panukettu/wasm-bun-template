@@ -22,7 +22,7 @@ async function instantiate(module, imports = {}) {
   const memory = exports.memory || imports.env.memory;
   const adaptedExports = Object.setPrototypeOf({
     measure(a, b) {
-      // assembly/index/measure(i32, i32) => ~lib/array/Array<i64>
+      // wasm/index/measure(i32, i32) => ~lib/array/Array<i64>
       return __liftArray(__getI64, 3, exports.measure(a, b) >>> 0);
     },
   }, exports);

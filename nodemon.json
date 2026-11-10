@@ -3,12 +3,12 @@
   "ignore": [".git", "node_modules/**/node_modules"],
   "verbose": true,
   "execMap": {
-    "ts": "pnpm run asm"
+    "ts": "bun run asm"
   },
   "events": {
     "restart": "echo Restarting"
   },
-  "watch": ["assembly"],
+  "watch": ["wasm"],
   "env": {
     "NODE_ENV": "development"
   },

@@ -3,7 +3,7 @@ import { serveStatic } from "hono/bun";
 import { App } from ".";
 
 const app = new Hono();
-const clientFile = Bun.file("./src/client.ts", {
+const clientFile = Bun.file("./web/client.ts", {
   type: "application/javascript",
 });
 
@@ -26,7 +26,7 @@ app.get("/client.ts", (c) =>
 app.get(
   "/static/*",
   serveStatic({
-    root: "/src/",
+    root: "./web",
   })
 );
 
